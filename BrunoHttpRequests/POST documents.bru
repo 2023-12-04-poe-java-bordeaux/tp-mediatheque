@@ -1,0 +1,18 @@
+meta {
+  name: POST documents
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseURL}}/api/documents
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "titre": "Java pour les Nuls",
+    "auteur": "James"
+  }
+}

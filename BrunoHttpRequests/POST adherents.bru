@@ -1,0 +1,19 @@
+meta {
+  name: POST adherents
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseURL}}/api/adherents
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "prenom": "James",
+      "nom": "Bond",
+      "finAdhesion": "2024-02-01"
+    }
+}

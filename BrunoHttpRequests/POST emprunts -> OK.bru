@@ -1,0 +1,22 @@
+meta {
+  name: POST emprunts -> OK
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseURL}}/api/emprunts
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+      "adherent": {
+        "id": 1
+      },
+      "document": {
+        "id": 2
+      }
+    }
+}
